@@ -269,7 +269,6 @@ footer {
 	.content-container {
 		width: 70%;
 		max-width: 1000px;
-		padding: 0 30px;
 	}
 
 	.hero {
@@ -329,24 +328,12 @@ footer {
 	}
 
 	.print-pin {
-		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		gap: 40px;
-		margin-bottom: 18px;
 	}
 
 	.print-button,
 	.pin-button {
-		display: flex;
-		justify-content: center;
-		gap: 8px;
 		width: 240px;
-		height: 20px;
-		background: #D7C7CF;
-		padding: 10px 10px;
-		cursor: pointer;
-		border-radius: 6px;
 	}
 
 	.recipe-meta {
