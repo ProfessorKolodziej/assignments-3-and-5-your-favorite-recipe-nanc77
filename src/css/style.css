@@ -1,7 +1,7 @@
 body {
 	margin: 0;
+	padding: 0;
 }
-
 
 .navigation {
 	background-color: white;
@@ -11,19 +11,69 @@ body {
 }
 
 .content-container {
-	padding: 20px;
-	padding-right: 20px;
+	width: 100%;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
 	margin: 0 auto;
-	font-family: "Nunito", serif;
 }
 
-
-h1 {
+.hero h1 {
 	font-family: "Cormorant Garamond", serif;
-	font-weight: 700;
+	font-size: 40px;
 	font-style: normal;
-	font-size: 30px;
+	font-weight: 700;
+	line-height: normal;
 	color: #262626
+}
+
+.hero .description {
+	font-family: "Nunito", serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+}
+
+.details img {
+	width: 26px;
+	height: auto;
+}
+
+.jump-to-recipe {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
+
+.button {
+	display: inline-block;
+	background-color: #D7C7CF;
+	color: #262626;
+	font-family: "Nunito", sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: normal;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.hero-image {
+	width: 100%;
+	text-align: center;
+	border-radius: 10px;
 }
 
 h2 {
@@ -31,81 +81,291 @@ h2 {
 	font-weight: 700;
 	font-style: normal;
 	font-size: 30px;
-	color: #262626
+	color: #5D1D40;
 }
 
-.jump-to-recipe {
-	color: #262626;
+.content-text {
 	font-family: "Nunito", serif;
-	padding: 20px;
-	padding-top: 0px;
 	margin: 0 auto;
-}
-
-.button-recipe {
-	display: inline-block;
-	padding: 10px 20px;
-	background-color: #D7C7CF;
-	color: #262626;
-	text-decoration: none;
-	border-radius: 5px;
-	font-weight: bold;
-	cursor: pointer;
+	color: #262626
 }
 
 .images-noodle {
-	display: block;
-	margin: 0 auto;
-	width: 50%;
-}
-
-.text {
-	font-family: "Nunito", serif;
-	padding: 20px;
-	margin: 0 auto;
-	color: #262626
-}
-
-h3 {
-	font-family: "Cormorant Garamond", serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 28px;
+	width: 100%;
 	text-align: center;
-	color: #262626
+	border-radius: 10px;
 }
 
-h4 {
+.recipe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #D7C7CF;
+	width: 80%;
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 12px;
+	text-align: center;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.recipe-info {
+	background-color: white;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.recipe h3 {
 	font-family: "Cormorant Garamond", serif;
-	font-size: larger;
-	color: #262626
+	font-size: 34px;
+	font-weight: 700;
+	color: #5D1D40;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #5D1D40;
+	padding-bottom: 15px;
+}
+
+.recipe-image {
+	width: 93px;
+	height: 93px;
+	border-radius: 50px;
+	display: block;
+	margin: 10px auto;
 }
 
 .stars {
 	text-align: center;
-	color: #262626
+	color: #5D1D40;
+	margin-bottom: 20px
+}
+
+.recipe-card p {
+	font-size: 14px;
+	color: #5D1D40;
+	margin-bottom: 20px;
+}
+
+.recipe-meta {
+	font-size: 12px;
+	text-align: center;
+	line-height: 0.3;
 }
 
 .print-pin {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 80px;
-	color: #262626
+	gap: 40px;
+	margin-bottom: 18px;
 }
 
-.recipe {
-	font-family: "Nunito", serif;
-	padding: 20px;
-	margin: auto;
-	width: 80%;
+.print-button,
+.pin-button {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	width: 200px;
+	height: 20px;
+	background: #D7C7CF;
+	padding: 10px 10px;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.print,
+.pin {
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 5px;
+	color: #5D1D40;
+}
+
+.recipe h4 {
+	font-family: "Cormorant Garamond", serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #262626;
+	text-align: center;
+}
+
+.recipe ul,
+.recipe ol {
+	text-align: left;
+	padding-left: 20px;
+}
+
+.recipe ul li,
+.recipe ol li {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.nutrition-title {
+	text-align: center;
+	padding: 2px 15px 15px;
+	margin-top: 30px;
 	background-color: #D7C7CF;
-	color: #262626
 }
 
-.images-recipe {
-	width: 150px;
-	height: 150px;
-	display: block;
-	margin: auto;
+.nutrition-title h4 {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #5D1D40;
+}
+
+.nutrition-title p {
+	font-size: 14px;
+	line-height: 10px;
+	color: #5D1D40;
+}
+
+.nutrition-info {
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 530px;
+	margin: 0 auto;
+}
+
+.nutrition-name {
+	flex: 2;
+	text-align: left;
+}
+
+.nutrition-percent {
+	flex: 1;
+	text-align: right;
+}
+
+.nutrition-name p,
+.nutrition-percent p {
+	font-size: 14px;
+	font-style: italic;
+	color: #282828;
+	padding: 8px 0;
+	margin: 0;
+	border-bottom: 2px solid #D9D9D9;
+}
+
+.nutrition-name p:last-child,
+.nutrition-percent p:last-child {
+	border-bottom: none;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background: #D7C7CF;
+	margin-top: 20px;
+}
+
+@media (min-width: 1000px) {
+	.content-container {
+		width: 70%;
+		max-width: 1000px;
+		padding: 0 30px;
+	}
+
+	.hero {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 50px;
+	}
+
+	.hero h1 {
+		font-size: 64px;
+		max-width: 435px;
+	}
+
+	.hero .description {
+		font-size: 18px;
+		max-width: 500px;
+	}
+
+	.hero-image {
+		width: 55%;
+		max-width: 600px;
+		border-radius: 15px;
+		height: auto;
+		max-height: 550px;
+		object-fit: cover;
+	}
+
+	h2 {
+		font-size: 46px;
+	}
+
+	.ingredient-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		margin: 40px 0;
+	}
+
+	.ingredient-text {
+		width: 80%;
+		margin: 0%;
+	}
+
+	.ingredients-text ul {
+		padding-left: 20px;
+	}
+
+	.ingredient-section img {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		max-height: 350px;
+		border-radius: 12px;
+		object-fit: cover;
+	}
+
+	.print-pin {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px;
+		margin-bottom: 18px;
+	}
+
+	.print-button,
+	.pin-button {
+		display: flex;
+		justify-content: center;
+		gap: 8px;
+		width: 240px;
+		height: 20px;
+		background: #D7C7CF;
+		padding: 10px 10px;
+		cursor: pointer;
+		border-radius: 6px;
+	}
+
+	.recipe-meta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: left;
+		gap: 30px;
+	}
+
+	.recipe-meta p {
+		font-size: 14px;
+		line-height: 1.2;
+		margin: 5px 0 10px;
+	}
+
+	.time-info,
+	.category-info {
+		flex: 1;
+		max-width: 250px;
+	}
 }
