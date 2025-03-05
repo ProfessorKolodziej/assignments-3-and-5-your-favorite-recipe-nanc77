@@ -30,7 +30,7 @@ body {
 }
 
 .hero .description {
-	font-family: "Nunito", serif;
+	font-family: "Nunito", sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
@@ -71,9 +71,12 @@ body {
 }
 
 .hero-image {
+	border-radius: 10px;
+	display: block;
+	max-height: 400px;
 	width: 100%;
 	text-align: center;
-	border-radius: 10px;
+	object-fit: cover;
 }
 
 h2 {
@@ -85,7 +88,7 @@ h2 {
 }
 
 .content-text {
-	font-family: "Nunito", serif;
+	font-family: "Nunito", sans-serif;
 	margin: 0 auto;
 	color: #262626
 }
@@ -94,6 +97,9 @@ h2 {
 	width: 100%;
 	text-align: center;
 	border-radius: 10px;
+	display: block;
+	max-height: 500px;
+	object-fit: cover;
 }
 
 .recipe {
@@ -291,10 +297,8 @@ footer {
 	.hero-image {
 		width: 55%;
 		max-width: 600px;
-		border-radius: 15px;
 		height: auto;
 		max-height: 550px;
-		object-fit: cover;
 	}
 
 	h2 {
